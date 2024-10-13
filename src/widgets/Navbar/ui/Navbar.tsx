@@ -11,7 +11,6 @@ interface NavbarProps {
 export const Navbar = ({ className }: NavbarProps) => {
   return (
     <div className={classNames(classes.navbar, {}, [className])}>
-      <ThemeSwitcher/>
       <div className={classes.links}>
         <AppLink theme={AppLinkTheme.SECONDARY} to={"/"} className={classes.mainLink}>Главная</AppLink>
         <AppLink theme={AppLinkTheme.SECONDARY} to={"/about"}>О сайте</AppLink>
