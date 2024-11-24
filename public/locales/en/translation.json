@@ -5,5 +5,6 @@
   "NotFoundPage": "Page not found",
   "Unexpected Error": "An unexpected error occurred",
   "reload page": "Refresh page",
-  "throw error": "create an error"
+  "throw error": "create an error",
+  "toggle": "toggle"
 }
