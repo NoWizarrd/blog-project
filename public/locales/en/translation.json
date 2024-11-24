@@ -2,9 +2,12 @@
   "Тестовый пример": "Test translation",
   "Перевод": "Translate",
   "Язык": "English",
+  "Короткий язык": "En",
   "NotFoundPage": "Page not found",
   "Unexpected Error": "An unexpected error occurred",
   "reload page": "Refresh page",
   "throw error": "create an error",
-  "toggle": "toggle"
+  "toggle": "toggle",
+  "Main": "Main",
+  "About": "About us"
 }
