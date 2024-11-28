@@ -9,5 +9,6 @@
   "throw error": "create an error",
   "toggle": "toggle",
   "Main": "Main",
-  "About": "About us"
+  "About": "About us",
+  "Enter": "Login"
 }
