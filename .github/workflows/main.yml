@@ -12,7 +12,7 @@ jobs:
       - name: Cache Node.js modules
         uses: actions/cache@v3
         with:
-          path: C:/Users/runneradmin/AppData/Local/npm-cache
+          path: node_modules
           key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
           restore-keys: |
             ${{ runner.os }}-node-
@@ -34,7 +34,7 @@ jobs:
       - name: Cache Node.js modules
         uses: actions/cache@v3
         with:
-          path: C:/Users/runneradmin/AppData/Local/npm-cache
+          path: node_modules
           key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
           restore-keys: |
             ${{ runner.os }}-node-
@@ -53,13 +53,12 @@ jobs:
 
   build:
     runs-on: windows-2019
-    needs: [linting, testing]
     steps:
       - uses: actions/checkout@v2
       - name: Cache Node.js modules
         uses: actions/cache@v3
         with:
-          path: C:/Users/runneradmin/AppData/Local/npm-cache
+          path: node_modules
           key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
           restore-keys: |
             ${{ runner.os }}-node-
