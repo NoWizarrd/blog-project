@@ -10,5 +10,7 @@
   "toggle": "toggle",
   "Main": "Main",
   "About": "About us",
-  "Enter": "Login"
+  "Enter": "Login",
+  "Enter login": "Enter login",
+  "Enter password": "Enter password"
 }

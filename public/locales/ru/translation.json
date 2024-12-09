@@ -10,5 +10,7 @@
   "toggle": "Переключить",
   "Main": "Главная",
   "About": "О сайте",
-  "Enter": "Войти"
+  "Enter": "Войти",
+  "Enter login": "Введите login",
+  "Enter password": "Введите пароль"
 }
