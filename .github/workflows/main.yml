@@ -1,74 +1,79 @@
 name: linting, testing, building
+
 on: 
   push:
     branches: [main]
   pull_request:
     branches: [main]
+
 jobs:
-    linting:
-        runs-on: windows-2019
-        steps:
-          - uses: actions/checkout@v2
-          - name: Cache Node.js modules
-            uses: actions/cache@v3
-            with:
-              path: ~/.npm
-              key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
-              restore-keys: |
-                ${{ runner.os }}-node-
-          - name: Setup Node.js
-            uses: actions/setup-node@v2
-            with:
-              node-version: 16.x
-          - name: Install dependencies
-            run: npm install
-          - name: Lint TypeScript
-            run: npm run lint:ts
-          - name: Lint CSS
-            run: npm run lint:scss
-    testing:
-        runs-on: windows-2019
-        steps:
-        - uses: actions/checkout@v2
-        - name: Cache Node.js modules
-          uses: actions/cache@v3
-          with:
-            path: ~/.npm
-            key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
-            restore-keys: |
-                ${{ runner.os }}-node-
-        - name: Setup Node.js
-          uses: actions/setup-node@v2
-          with:
-            node-version: 16.x
-        - name: Install dependencies
-          run: npm install
-        - name: Run Unit Tests
-          run: npm run test:unit
-        - name: build storybook
-          run: npm run storybook:build
-        - name: Screenshot Testing
-          run: npm run test:ui:ci
-    build:
-        runs-on: windows-2019
-        needs: [linting, testing]
-        steps:
-        - uses: actions/checkout@v2
-        - name: Cache Node.js modules
-          uses: actions/cache@v3
-          with:
-            path: ~/.npm
-            key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
-            restore-keys: |
-                ${{ runner.os }}-node-
-        - name: Setup Node.js
-          uses: actions/setup-node@v2
-          with:
-            node-version: 16.x
-        - name: Install dependencies
-          run: npm install
-        - name: Build Project
-          run: npm run build:prod
+  linting:
+    runs-on: windows-2019
+    steps:
+      - uses: actions/checkout@v2
+      - name: Cache Node.js modules
+        uses: actions/cache@v3
+        with:
+          path: C:\Users\runneradmin\AppData\Local\npm-cache
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+      - name: Setup Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: 16.x
+      - name: Install dependencies
+        run: npm install
+      - name: Lint TypeScript
+        run: npm run lint:ts
+      - name: Lint CSS
+        run: npm run lint:scss
+
+  testing:
+    runs-on: windows-2019
+    steps:
+      - uses: actions/checkout@v2
+      - name: Cache Node.js modules
+        uses: actions/cache@v3
+        with:
+          path: C:\Users\runneradmin\AppData\Local\npm-cache
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+      - name: Setup Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: 16.x
+      - name: Install dependencies
+        run: npm install
+      - name: Run Unit Tests
+        run: npm run test:unit
+      - name: Build Storybook
+        run: npm run storybook:build
+      - name: Screenshot Testing
+        run: npm run test:ui:ci
+
+  build:
+    runs-on: windows-2019
+    needs: [linting, testing]
+    steps:
+      - uses: actions/checkout@v2
+      - name: Cache Node.js modules
+        uses: actions/cache@v3
+        with:
+          path: C:\Users\runneradmin\AppData\Local\npm-cache
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+      - name: Setup Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: 16.x
+      - name: Install dependencies
+        run: npm install
+      - name: Build Project
+        run: npm run build:prod
+
 
 #   pipeline:
 #     runs-on: windows-2019
