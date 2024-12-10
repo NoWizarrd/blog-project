@@ -46,7 +46,7 @@ module.exports = {
                 ignoreAttribute: ['data-testid'],
             }],
         'linebreak-style': ['error', process.platform === 'win32' ? 'windows' : 'unix'],
-        'max-len': ['error', { ignoreComments: true, code: 100 }],
+        'max-len': ['error', { ignoreComments: true, code: 120 }],
         'jsx-a11y/no-static-element-interactions': 'off',
         'jsx-a11y/click-events-have-key-events': 'off',
         'react-hooks/rules-of-hooks': 'error',

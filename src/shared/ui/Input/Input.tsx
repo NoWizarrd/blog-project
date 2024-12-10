@@ -28,15 +28,13 @@ export const Input = memo((props: InputProps) => {
     };
 
     return (
-        <div className={classNames(classes.inputWrapper, {}, [className])}>
-            <input
-                ref={ref}
-                className={classes.input}
-                type={type}
-                value={value}
-                onChange={handleInputChange}
-                {...otherProps}
-            />
-        </div>
+        <input
+            ref={ref}
+            className={classNames(classes.input, {}, [className])}
+            type={type}
+            value={value}
+            onChange={handleInputChange}
+            {...otherProps}
+        />
     );
 });
