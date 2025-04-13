@@ -9,11 +9,13 @@
   "throw error": "создать ошибку",
   "toggle": "Переключить",
   "Main": "Главная",
+  "Profile": "Профиль",
   "About": "О сайте",
   "Enter": "Войти",
   "Enter login": "Введите login",
   "Enter password": "Введите пароль",
   "Authorization form": "Форма авторизации",
   "Logout": "Выйти",
-  "error login": "Вы ввели неверный логин или пароль"
+  "error login": "Вы ввели неверный логин или пароль",
+  "Profile page": "Страница профиля"
 }

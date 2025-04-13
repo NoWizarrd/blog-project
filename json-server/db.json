@@ -25,6 +25,15 @@
         "password": "123"
       }
     ],
-    "profile": { "name": "typicode" }
+    "profile": { 
+        "firstname": "Алексей",
+        "lastname": "lastname",
+        "age": "22",
+        "currency": "RUB",
+        "country": "Russia",
+        "city": "Moscow",
+        "username": "admin",
+        "avatar": "https://avatars.yandex.net/get-music-content/8316823/0b758558.a.25200576-1/m1000x1000?webp=false"
+     }
   }
   

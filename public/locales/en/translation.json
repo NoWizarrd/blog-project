@@ -9,11 +9,13 @@
   "throw error": "create an error",
   "toggle": "toggle",
   "Main": "Main",
+  "Profile": "Profile",
   "About": "About us",
   "Enter": "Login",
   "Enter login": "Enter login",
   "Enter password": "Enter password",
   "Authorization form": "Authorization form",
   "Logout": "Log out",
-  "error login": "You entered an incorrect username or password"
+  "error login": "You entered an incorrect username or password",
+  "Profile page": "Profile page"
 }
