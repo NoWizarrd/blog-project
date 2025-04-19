@@ -10,5 +10,10 @@
   "Your age": "Your age",
   "Your city": "Your city",
   "Username": "Enter username",
-  "Change avatar": "Enter a link to the avatar"
+  "Change avatar": "Enter a link to the avatar",
+  "Server error": "Server error",
+  "No data": "Data is not indicated",
+  "Incorrect user data": "Name and surname are required",
+  "INCORRECT_COUNTRY": "Incorrect region",
+  "INCORRECT_AGE": "Incorrect age"
 }
