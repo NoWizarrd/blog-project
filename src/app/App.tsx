@@ -3,13 +3,13 @@ import { Navbar } from 'widgets/Navbar';
 import { Sidebar } from 'widgets/Sidebar';
 import { Suspense, useEffect } from 'react';
 import { userActions } from 'entities/User';
-import { useDispatch } from 'react-redux';
+import { useAppDispatch } from 'shared/lib/hooks/useAppDispatch';
 import { AppRouter } from './providers/router';
 
 const App = () => {
-    const dispatch = useDispatch();
+    const dispatch = useAppDispatch();
     useEffect(() => {
-        dispatch(userActions.initAuthData);
+        dispatch(userActions.initAuthData());
     }, [dispatch]);
 
     return (

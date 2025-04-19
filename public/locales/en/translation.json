@@ -17,5 +17,7 @@
   "Authorization form": "Authorization form",
   "Logout": "Log out",
   "error login": "You entered an incorrect username or password",
-  "Profile page": "Profile page"
+  "Profile page": "Profile page",
+  "Chose currency": "Indicate the currency",
+  "Chose country": "Indicate the country"
 }
