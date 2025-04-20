@@ -27,6 +27,14 @@ export default ({ config }: {config: webpack.Configuration}) => {
     //     return rule;
     // });
 
+    /* исправление ошибки storybook */
+    // if (config!.resolve!.modules) {
+    // config!.resolve!.modules = [
+    //     path.resolve(__dirname, '../../src'),
+    //     'node_modules',
+    // ];
+    // }
+
     config!.module!.rules.push({
         test: /\.svg$/,
         use: ['@svgr/webpack'],
@@ -36,6 +44,7 @@ export default ({ config }: {config: webpack.Configuration}) => {
     config.plugins?.push(new DefinePlugin({
         __IS_DEV__: true,
         __API__: JSON.stringify(''),
+        __PROJECT__: JSON.stringify('storybook'),
     }));
 
     return config;
