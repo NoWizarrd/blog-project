@@ -1,4 +1,6 @@
 {
   "Article not found": "The article was not found",
-  "Error while loading article": "There was an error when loading the article."
+  "Error while loading article": "There was an error when loading the article.",
+  "Commentary": "Comments",
+  "No Comments": "There are no comments"
 }
