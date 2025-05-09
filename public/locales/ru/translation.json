@@ -20,5 +20,7 @@
   "error login": "Вы ввели неверный логин или пароль",
   "Profile page": "Страница профиля",
   "Chose currency": "Укажите валюту",
-  "Chose country": "Укажите страну"
+  "Chose country": "Укажите страну",
+  "Enter comment text": "Введите текст комментария",
+  "Send": "Отправить"
 }

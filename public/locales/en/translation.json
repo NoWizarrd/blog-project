@@ -20,5 +20,7 @@
   "error login": "You entered an incorrect username or password",
   "Profile page": "Profile page",
   "Chose currency": "Indicate the currency",
-  "Chose country": "Indicate the country"
+  "Chose country": "Indicate the country",
+  "Enter comment text": "Enter the text of the comment",
+  "Send": "Send"
 }
